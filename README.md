@@ -3,7 +3,7 @@ I can be reached at <a href="mailto:objectoriented0001@gmail.com">objectoriented
 <br>
 <br>
 ![midnqp's GitHub stats](https://github-readme-stats.vercel.app/api?username=midnqp&theme=dark&show_icons=true&include_all_commits=true&count_private=true)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=midnqp&layout=compact&langs_count=10)
 
 ## I've been building...
 
