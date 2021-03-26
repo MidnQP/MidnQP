@@ -1,13 +1,9 @@
-![midnqp's GitHub stats](https://github-readme-stats.vercel.app/api?username=midnqp&theme=dark&show_icons=true&include_all_commits=true&count_private=true)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-
-<br>
-<br>
 I am currently learning/collaborating to build the future of information processing, through _rapidly developed web infrastructures_.
-I can be reached at <objectoriented0001@gmail.com>.
+I can be reached at <a href="mailto:objectoriented0001@gmail.com">objectoriented0001@gmail.com</a>.
 <br>
 <br>
+![midnqp's GitHub stats](https://github-readme-stats.vercel.app/api?username=midnqp&theme=dark&show_icons=true&include_all_commits=true&count_private=true)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 ## I've been building...
 
