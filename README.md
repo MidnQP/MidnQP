@@ -10,4 +10,4 @@ I can be reached at <a href="mailto:objectoriented0001@gmail.com">objectoriented
 - `DarisOne` The one-stop merged-information StackOverFlow, built in Nodejs. One perfect answer to your question/topic with all you need to know.
 - `alhamd-vanilla` Specifications for building hyper-performant & long-term-maintainable Node.js architectures.
 - `libavoidrepetition-c` Builtins of Python implemented in C. Blazing-fast performance with unsophisticated codebase now in C.
-- `alhamdjs` Tooling for alhamd-vanilla. Integrates with Node.js swiftly to eliminate the 'M' of the MVC architecture.
+- `alhamd-js` Tooling for alhamd-vanilla. Integrates with Node.js swiftly to eliminate the 'M' of the MVC architecture.
