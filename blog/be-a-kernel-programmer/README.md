@@ -23,7 +23,7 @@ As a material you need [this](https://lwn.net/Kernel/LDD3/), and as code sample 
 - Chapter 16, 17, 18 - _Block, Network, and TTY drivers_: Know more, understandable read. If you're stuck, Google!! You can also have support from the latest kernel documentation.
 
 
-![](https://raw.githubusercontent.com/midnqp/midnqp/main/be-a-kernel-programmer/race_condition.png)
+![](https://raw.githubusercontent.com/midnqp/midnqp/main/blog/be-a-kernel-programmer/race_condition.png)
 
 
 I believe, the curiosity will move you forward to go through the rest - just like me. Just be acknowledged that, kernel developers aren't savants, they use `if else` and `case` too. To feel more comfortable with Linux kernel, you should dig deep in yourself to gather the courage to see [this](https://github.com/torvalds/linux).
