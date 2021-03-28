@@ -3,12 +3,13 @@
 
 Kernel hackers/developers implement applications and drivers for devices. This article will pave for you the way to getting started, and highlight the steps in the process. 
 
-### Requirements: 
+## Requirements
 - GNU C Compiler
 - Any virtual machine, preferably `qemu`
 - Strong curiosity to explore & learn
 
-**Let's take off**: As a material you need [this](https://lwn.net/Kernel/LDD3/), and as code sample you need [this](https://github.com/martinezjavier/ldd3). Honestly, this is a bit of backward compatibility. But, updated examples can be found [here](https://resources.oreilly.com/examples/9780596005900/).
+## Let's take off
+As a material you need [this](https://lwn.net/Kernel/LDD3/), and as code sample you need [this](https://github.com/martinezjavier/ldd3). Honestly, this is a bit of backward compatibility. But, updated examples can be found [here](https://resources.oreilly.com/examples/9780596005900/).
 
 
 **Linux Device Drivers, Third Edition**: Initially, not all the chapters are necessary to master. To kick off the curiosity, we'll read:
