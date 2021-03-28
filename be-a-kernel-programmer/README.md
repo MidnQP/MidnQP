@@ -25,4 +25,4 @@ Kernel hackers/developers implement applications and drivers for devices. This a
 ![](https://raw.githubusercontent.com/midnqp/midnqp/main/be-a-kernel-programmer/race_condition.png)
 
 
-I believe, the curiosity will move you forward to go through the rest - just like me. Just be acknowledged that, kernel developers aren't savants, they use if else and case too. To feel more comfortable with Linux kernel, you should dig deep in yourself to gather the courage to see [this](https://github.com/torvalds/linux).
+I believe, the curiosity will move you forward to go through the rest - just like me. Just be acknowledged that, kernel developers aren't savants, they use `if else` and `case` too. To feel more comfortable with Linux kernel, you should dig deep in yourself to gather the courage to see [this](https://github.com/torvalds/linux).
