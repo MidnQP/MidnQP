@@ -21,10 +21,10 @@ Specifications to build maintainable & hyper-performant web/nodejs softwares, wi
 - ###### `image2audio-ocr-tts`
 Upload any image/photograph/screenshot containing texts, wait, and download the audio of the texts!! Try now - it's simple. All languages are supported.
 
-- ##### `minimal-bootable-linux`
+- ###### `minimal-bootable-linux`
 A bootable, minimal, usable operating system above a minified kernel. Run a script, and it boots up to a terminal! Includes a package manager.
 
-- ###### `lib-cpython-builtins`
+- ##### `lib-cpython-builtins`
 Use the built-in functions of Python in C, through 1 header file. Easy to read & understand. Fun to write, just like Python.
 
 - ###### `lib-cmdline-modules`
