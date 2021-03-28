@@ -13,7 +13,7 @@ Kernel hackers/developers implement applications and drivers for devices. This a
 
 **Linux Device Drivers, Third Edition**: Initially, not all the chapters are necessary to master. To kick off the curiosity, we'll read:
 
-- Chapter 1 _Intro_: Learn more about `char`, `block` devices, `modules` (to add features to your machine) -- all of which are accessible as `files`
+- Chapter 1 _Intro_: Learn more about `char`, `block` devices, `modules` (to add features to your machine) -- all of which are accessible as a `file`.
 
 - Chapter 2 _Modules_: Running modules -- the fun part
 
