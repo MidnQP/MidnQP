@@ -2,10 +2,14 @@ I am collaborating to build the future of **rapid data processing** through **qu
 Feel free to talk to me at [objectoriented0001@gmail.com](mailto:objectoriented0001@gmail.com).
 
 
-![midnqp's GitHub stats](https://github-readme-stats.vercel.app/api?username=midnqp&theme=default&show_icons=true&include_all_commits=true&count_private=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=midnqp&layout=compact&langs_count=10)
+
+<p align="center"><img alt="midnqp's Gtihub" src="https://github-readme-stats.vercel.app/api?username=midnqp&theme=default&show_icons=true&include_all_commits=true&count_private=true"></p>
+<p align="center"><img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=midnqp&layout=compact&langs_count=10"></p>
 
 
+
+
+<!--
 # Projects I had been actively developing. . .
 
 - ##### `StacksMergeOne`
@@ -29,3 +33,4 @@ Use the built-in functions of Python in C, through 1 header file. Easy to read &
 
 - ###### `lib-cmdline-modules`
 Write command-prompt/terminal scripts faster than ever! Automated code documentation, and simplest argument-parsing.
+-->
