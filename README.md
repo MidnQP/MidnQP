@@ -4,7 +4,8 @@ Feel free to talk to me at [objectoriented0001@gmail.com](mailto:objectoriented0
 
 
 <p align="center"><img alt="midnqp's Gtihub" src="https://github-readme-stats.vercel.app/api?username=midnqp&theme=default&show_icons=true&include_all_commits=true&count_private=true"></p>
-<p align="center"><img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=midnqp&layout=compact&langs_count=10"></p>
+
+<p align="center"><img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=midnqp&layout=compact&langs_count=20"></p>
 
 
 
