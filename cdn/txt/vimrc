@@ -1,0 +1,107 @@
+" 'set modeline' added.
+" # vim: ts=2 sw=2 noet
+" Now the above thing will work!!
+
+" VIM INSTALLATION DOESN'T WORK (LIKE BACKSPACE NOT WORKING):
+" ````````````````````````````````````````````````````````````
+"	$sudo apt-get install vim-nox vim-airline vim-youcompleteme -y
+" # You just said 'yes' to 196 MB+ ; kaboom! full vim installed.
+
+
+" ln -s ~/.vimrc ~/.config/nvim/init.vim
+" Do this hack to make life cute:
+" ls -s ~/.vimrc ~/ething/workspace/depression/vimrc
+
+
+"""""""" SOME VIM COMMANDS YOU ARE HUNGRY FOR """""""
+" :! [any terminal command here];
+" :Ctrl+R % [press enter after %, then it shows FILENAME]
+" :split [any FILENAME here]
+" :%retab!  [retabulate the whole file] space -> tabs
+" :retab [won't work until, :set ts=2 sw=2 et]
+" [ if ! at EOL, damn, affects the whole file!]
+" :%s/socket_fd/socketfd/g
+" :set sw&  [set the sw to default setting]
+
+
+" [simultaneous editing. CI/CD/CE. Continuous Editing]
+" :split [horizontally edit the same file simultaneously]
+" :vsplit [vertically edit the same file simultaneously]
+
+
+" [foldings]
+" zo: opens fold at the cursor
+" zc: closes fold at the cursor
+" zm: increase foldlevel by 1
+" zr: decrease foldlevel by 1
+
+
+" [ control ]
+" select a block in visual mode. >
+" 		And to continue shifting `sw` unit, press . (fullstop)
+"""""""               """""""
+
+" runtime! debian.vim
+" let g:skip_defaults_vim = 1 
+
+
+
+let g:ycm_semantic_triggers = {'c': ['re!\w{1,}'],                         'objc': ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',      're!\[.*\]\s'],                                                                  'ocaml': ['.', '#'],             'cpp,cuda,objcpp': ['->', '.', '::'],   'perl': ['->'],       'php': ['->', '::'],        'cs,d,elixir,go,groovy,java,javascript,julia,perl6,python,scala,typescript,vb': ['.', 're!\w{1,}'],                         'ruby,rust': ['.', '::'],           'lua': ['.', ':'],        'erlang': [':']		}
+
+
+
+
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+
+autocmd BufRead,BufNewFile *.h setlocal ft=c
+autocmd BufRead,BufNewFile *.txt setlocal sw=2 ts=2 syntax=asm et
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * silent! loadview
+augroup END
+
+
+
+syntax enable
+set pumheight=10000
+set completeopt-=preview
+set mouse=a
+set modeline
+set updatetime=1
+set nonumber
+set foldlevelstart=99
+set foldcolumn=0
+set foldmethod=indent
+set noshowmatch
+set ts=2 sw=2 ai noet
+
+set clipboard=unnamedplus
+"----------------------|
+"colorscheme morning
+"set background=light
+"----------------------|
+"colorscheme default
+"set background=dark
+"----------------------|
+colorscheme pablo
+set background=light
+"-----------------------|
+
+set backspace=indent,eol,start
+" filetype off
+
+
+" autocmd Filetype html setlocal shiftwidth=2 tabstop=2
+" autocmd FileType txt setlocal ts=2 sw=2 et
+" autocmd FileType md setlocal ts=2 sw=2 eti
+
+
+" highlight Normal ctermfg=white ctermbg=black
+" if filereadable("~/.vimrc")
+  "source ~/.vimrc
+" endif
+" set nocompatible
+" filetype plugin indent on
+" execute pathogen#infect()
