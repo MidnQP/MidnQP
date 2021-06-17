@@ -16,3 +16,6 @@ pkg i vim -y
 wget https://raw.githubusercontent.com/midnqp/midnqp/main/cdn/txt/colors.properties
 mv colors.properties .termux
 am broadcast --user 0 -a com.termux.app.reload_style com.termux > /dev/null
+
+wget https://raw.githubusercontent.com/midnqp/midnqp/main/cdn/txt/vimrc
+mv vimrc ~/.vimrc
