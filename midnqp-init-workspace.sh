@@ -14,7 +14,7 @@ res="\033[0m"
 
 
 # Packages that are installed below:
-# git wget vim-nox
+# git wget vim-nox brightnessctl
 
 
 
@@ -36,6 +36,10 @@ function setup_vim {
 	mkdir ~/.vim
 }
 function setup_workspace {
+	#brightness
+	sudo apt install brightnessctl -y
+
+
 	# ething
 	git clone --depth 1 --filter=blob:none --sparse https://github.com/midnqp/ething
 	cd ething
