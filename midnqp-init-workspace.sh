@@ -33,19 +33,33 @@ function setup_vim {
 	mv vimrc ~/.vimrc
 	mkdir ~/.vim
 }
+function setup_workspace {
+	# ething
+	git clone --depth 1 --filter=blob:none --sparse https://github.com/midnqp/ething
+	cd ething
+	git sparse-checkout set code desk proj misc sec tmp rsch.log
+	cd ..
+
+
+	# d-assist
+	sudo ln -s ~/ething/proj/Utils/d-assist/d-assist.py /usr/local/bin/d
+
+
+	# Web Browser
+	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+	sudo apt install ./google-chrome-stable_current_amd64.deb
+	rm ./google-chrome-stable_current_amd64.deb
+}
 manconf="$grn[Manual Config]$res"
-function manuals_common {
-	echo "" 
-}
-function manuals_wsl {
-	echo ""
-}
+function manuals_common {echo "";}
+function manuals_wsl {echo "";}
 function manuals_nonwsl {
 	echo -e "$manconf /usr/share/X11/xorg.conf.d/40-libinput.conf"
 }
 function setup_all {
 	setup_git
 	setup_vim
+	setup_workspace
 	manuals_common
 	if [ -f "/init" ]; then
 		## Only for WSL:
