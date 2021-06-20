@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Copyright (C) 2021 Muhammad Bin Zafar <midnightquantumprogrammer@gmail.com>
 # This fault-intolerant script prepares Midnqp's workspace.
 # Get this script from: https://raw.githubusercontent.com/midnqp/midnqp/main/midnqp-init-workspace.sh
