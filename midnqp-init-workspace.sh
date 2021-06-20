@@ -22,7 +22,10 @@ function setup_handwash {
 }
 function setup_git {
 	sudo apt install git -y
+	echo "setup_git: Configuring git..."
 	git config --global credential.helper store
+	git config --global user.email "midnightquantumprogrammer@gmail.com"
+	git config --global user.name "Midnqp"
 }
 function setup_vim {
 	sudo apt install vim-nox -y
