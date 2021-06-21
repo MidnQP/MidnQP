@@ -35,8 +35,11 @@ function setup_vim {
 	mv vimrc ~/.vimrc
 	mkdir ~/.vim
 }
+function setup_mysql {
+	echo ""
+}
 function setup_workspace {
-	#brightness
+	# brightness
 	sudo apt install brightnessctl -y
 
 
@@ -45,6 +48,10 @@ function setup_workspace {
 	cd ething
 	git sparse-checkout set code desk proj misc sec tmp rsch.log
 	cd ..
+
+
+	# midnqp
+	git clone https://github.com/midnqp/midnqp
 
 
 	# d-assist

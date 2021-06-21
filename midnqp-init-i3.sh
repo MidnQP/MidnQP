@@ -9,7 +9,8 @@ input="$blu[input]$res"
 info="$grn[info]$res"
 
 
-sudo brightnessctl set 400 intel_backlight
+#sudo brightnessctl set 400 intel_backlight
+brightnessctl set 400 intel_backlight
 
 # String="String"
 # echo $String | tail -c +2 | head -c -2
@@ -21,8 +22,14 @@ sudo brightnessctl set 400 intel_backlight
 #xrandr --output eDP-1 --mode 1368x768
 #xrandr --output eDP-1 --mode 1920x1080 --rate 48.00
 
+
+## The below line of code must be enabled at ~/.profile. Not here.
+#xrandr --output eDP-1 --mode 1600x900 --rate 48.00
+
+
 for n in {0..3}
 do
 	echo ""
-	sudo cpufreq-set -g powersave -c $n
+	#sudo cpufreq-set -g powersave -c $n
+	cpufreq-set -g powersave -c $n
 done
