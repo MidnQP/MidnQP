@@ -11,6 +11,7 @@
 red="\033[31m"
 grn="\033[32m"
 res="\033[0m"
+err="$red[error]$res"
 
 
 # Packages that are installed below:
@@ -30,13 +31,24 @@ function setup_git {
 	git config --global user.name "Midnqp"
 }
 function setup_vim {
-	sudo apt install vim-nox -y
-	wget https://raw.githubusercontent.com/midnqp/midnqp/main/cdn/txt/vimrc
-	mv vimrc ~/.vimrc
-	mkdir ~/.vim
+	#sudo apt install vim-nox -y
+	#wget https://raw.githubusercontent.com/midnqp/midnqp/main/cdn/txt/vimrc
+	#mv vimrc ~/.vimrc
+	#mkdir ~/.vim
+	if [ ! -d "$HOME/ething" ]; then
+		echo -e "$err $HOME/ething not present. Git cloning..."
+		setup_ething
+	fi
+	ln -s ~/ething/desk/vimrc ~/.vimrc
 }
 function setup_mysql {
 	echo ""
+}
+function setup_ething {
+	git clone --depth 1 --filter=blob:none --sparse https://github.com/midnqp/ething
+	cd ething
+	git sparse-checkout set code desk proj misc sec tmp rsch.log
+	cd ..
 }
 function setup_workspace {
 	# brightness
@@ -44,11 +56,8 @@ function setup_workspace {
 
 
 	# ething
-	git clone --depth 1 --filter=blob:none --sparse https://github.com/midnqp/ething
-	cd ething
-	git sparse-checkout set code desk proj misc sec tmp rsch.log
-	cd ..
-
+	setup_ething
+	
 
 	# midnqp
 	git clone https://github.com/midnqp/midnqp
@@ -64,15 +73,16 @@ function setup_workspace {
 	rm ./google-chrome-stable_current_amd64.deb
 }
 manconf="$grn[Manual Config]$res"
-function manuals_common {echo "";}
-function manuals_wsl {echo "";}
+function manuals_common { echo ""; }
+function manuals_wsl { echo ""; }
 function manuals_nonwsl {
 	echo -e "$manconf /usr/share/X11/xorg.conf.d/40-libinput.conf"
 }
 function setup_all {
+	# Below are sequenced based on dependency
 	setup_git
-	setup_vim
 	setup_workspace
+	setup_vim
 	manuals_common
 	if [ -f "/init" ]; then
 		## Only for WSL:

@@ -10,7 +10,7 @@ info="$grn[info]$res"
 
 
 #sudo brightnessctl set 400 intel_backlight
-brightnessctl set 400 intel_backlight
+brightnessctl set 100 intel_backlight
 
 # String="String"
 # echo $String | tail -c +2 | head -c -2
