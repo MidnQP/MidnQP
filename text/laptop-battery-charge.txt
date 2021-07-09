@@ -1,0 +1,44 @@
+210621 0129
+
+# Never ever ever in your life use "xrandr".
+# It's software-level. Even if you decrease
+# brightness to lowest, has no effect
+# at battery life!
+sudo brightnessctl -l
+sudo brightnessctl set 100 intel_backlight
+
+
+
+
+
+
+
+
+
+
+
+
+
+210621 0103
+
+ertb = estimated remaining time of battery (displayed on Ubuntu, running i3wm and nothing much else)
+
+* Higher screen resolution slightly-increased/increased ertb
+* Lower refresh rates slightly-increased/increased ertb
+
+* Turning off backlit keyboard significantly-increased ertb
+
+* Extremely low screen brightness (using xrandr) had little/not-noticeable effects
+* Amount of whiteness/blackness on screen had little/not-noticeable effects
+
+
+
+
+MORE THINGS TO TRY ON?
+* Change brightness using some other software? Remember when I changed brightness from Gnome, then xrandr couldn't do anything?
+
+
+
+
+FOUND OUT !!!
+* xrandr, xgamma - are software-level
