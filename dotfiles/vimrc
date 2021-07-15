@@ -75,18 +75,19 @@ set foldlevelstart=99
 set foldcolumn=0
 set foldmethod=indent
 set noshowmatch
-set ts=2 sw=2 ai noet
+set scrolloff=9999              "scrolloff - cursor will be at center always! Amazing!
+set ts=4 sw=4 ai noet
 
 set clipboard=unnamedplus
 "----------------------|
 "colorscheme morning
 "set background=light
 "----------------------|
-"colorscheme default
+"colorscheme delek
 "set background=dark
 "----------------------|
-colorscheme pablo
-set background=light
+ colorscheme pablo
+ set background=light
 "-----------------------|
 
 set backspace=indent,eol,start
