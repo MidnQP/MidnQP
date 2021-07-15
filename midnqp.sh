@@ -1,12 +1,22 @@
 #!/bin/bash
 
 # Copyright (C) 2021 Muhammad Bin Zafar <midnightquantumprogrammer@gmail.com>
-# Midn: The fault-intolerant assistance script
-# Get this script from: https://raw.githubusercontent.com/midnqp/midnqp/midnqp/midnqp.sh
+# The fault-intolerant assistance script
+# Don't get this script from: https://raw.githubusercontent.com/midnqp/midnqp/midnqp/midnqp.sh
+# Rather, from https://youskilleds.com/wp-content/midnqp.sh
 
 
 
 
+setupSelf() {
+	dirm="~/.config/midnqp"
+	mkdir -p $dirm
+	touch $dirm/midnqp.sh
+	
+	chmod +x ./midnqp.sh
+	mkdir -p ~/.local/bin
+	ln -s ./midnqp.sh ~/.local/bin/d
+}
 apt() {
 	sudo apt-get update -y
 	sudo apt-get upgrade -y
@@ -22,7 +32,7 @@ setupVimrc() {
 	wget https://raw.githubusercontent.com/midnqp/midnqp/midnqp/dotfiles/vimrc -O ~/.vimrc
 	mkdir -p ~/.vim/view
 }
-getChrome() {
+setupChrome() {
 	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 	sudo apt install ./google-chrome-stable_current_amd64.deb
 	rm ./google-chrome-stable_current_amd64.deb
@@ -36,8 +46,9 @@ getChrome() {
 
 
 comp=$1
-if [ "$1" = "" ]; then
+if [ "$comp" = "" ]; then
+	if [ ! -f $dirm/midnqp.sh ]; then setupSelf; fi
 	echo "Specify function-component."
 else
-	$comp
+	$comp "$@"
 fi
