@@ -4,3 +4,5 @@
 
 
 <a href="https://www.youtube.com/channel/UCCrUBJsEV3zEXU3iUurh-3Q"><img  height=25 src="https://user-images.githubusercontent.com/50658760/127776295-d8d58c12-182f-4f9a-ac0e-3377a3243716.png"></a>
+
+<a href="https://midnqp.github.io/midnqp/blog/">R E S E A R C H &emsp; B L O G</a>
