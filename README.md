@@ -70,7 +70,7 @@ Industry standards & best pratices
     kotlin, java, c#, Go, c++, React, and frameworks
 
 
-Cyber
+Cyber Sec
     Cyber threat intelligence
     Attack and Defense
 
