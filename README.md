@@ -3,10 +3,79 @@
 <p align="center"><img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=midnqp&layout=compact&langs_count=20"></p>
 
 
+<p align="center">
+<a href="https://midnqp.github.io/midnqp/blog/">
+  RESEARCH BLOGS
+</a>
+</p>
+
+<br>
+
+<p align=center><a href="https://www.youtube.com/channel/UCCrUBJsEV3zEXU3iUurh-3Q">YOUTUBE</a></p>
+
+  <br>
+  
+<p align=center><a href="http://linkedin.com/in/midnqp">LINKEDIN</a></p>
+  </p>
 
 
-<a href="https://www.youtube.com/channel/UCCrUBJsEV3zEXU3iUurh-3Q"><img  height=25 src="https://user-images.githubusercontent.com/50658760/127776295-d8d58c12-182f-4f9a-ac0e-3377a3243716.png"></a>
 
-<a href="http://linkedin.com/in/midnqp"><img src="https://user-images.githubusercontent.com/50658760/128333804-829ec5e4-5d75-4b44-b3fb-5aaabd52f053.png" height=25></a>
 
-<a href="https://midnqp.github.io/midnqp/blog/">R E S E A R C H &emsp; B L O G S</a>
+```
+Fields I Find Myself Excitedly Enthusiastic In
+Copyright (C) 2021 Muhammad <midnqp@gmail.com>
+
+
+"Interacting with hardware from a software perspective"
+                      Linus @Torvalds
+                      Maintainer,
+                      Largest Open-source Project,
+                      Earth.
+
+
+Computer Systems
+    Can we make efficient?
+        - Operating systems
+        - Memory managers
+    Scripting like Python in C/C++ through a library: <cpy.h>
+
+
+Web
+    The Midnqp\Frameworkless open-source project
+    How to build application sofwares for the web?
+        - in the shortest amount of time
+        - be the most convenient to end-users
+
+
+Fun, non-serious opensource projects
+    TerminalChat
+    codebase-autodoc
+    image-to-speech
+
+
+Research Opensource Codebases to learn, like
+    The Chromium Project
+    CPython Interpreter
+    PHP Interpreter
+    V8
+    deno
+    The GNU Project
+    C/C++ libs, parallel, network, malloc
+    references & notes: robpike, algorithms
+
+
+Industry standards & best pratices
+    code review
+    project manintenance
+    kotlin, java, c#, Go, c++, React, and frameworks
+
+
+Cyber
+    Cyber threat intelligence
+    Attack and Defense
+
+
+AI/ML
+    Rewriting libraries to understand them
+    Deep learning
+```
