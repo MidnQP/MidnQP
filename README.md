@@ -22,22 +22,12 @@
 
 
 ```
-Fields I Find Myself Excitedly Enthusiastic In
-Copyright (C) 2021 Muhammad <midnqp@gmail.com>
-
-
+--------------------------
+    FIELDS OF INTEREST
+--------------------------
 "Interacting with hardware from a software perspective"
-                      Linus @Torvalds
-                      Maintainer,
-                      Largest Open-source Project,
-                      Earth.
-
-
-Computer Systems
-    Can we make efficient?
-        - Operating systems
-        - Memory managers
-    Scripting like Python in C/C++ through a library: <cpy.h>
+              - Linus Torvalds
+                Maintainer of the Largest Open-source Project.
 
 
 Web
@@ -47,35 +37,17 @@ Web
         - be the most convenient to end-users
 
 
-Fun, non-serious opensource projects
-    TerminalChat
-    codebase-autodoc
-    image-to-speech
+Research Big Codebases
+    Chromium (Google Chrome)
+    Python3 Interpreter
+    PHP
+    V8 JavaScript Engine
+    Linux
 
 
-Research Opensource Codebases to learn, like
-    The Chromium Project
-    CPython Interpreter
-    PHP Interpreter
-    V8
-    deno
-    The GNU Project
-    C/C++ libs, parallel, network, malloc
-    references & notes: robpike, algorithms
-
-
-Industry standards & best pratices
-    code review
-    project manintenance
-    kotlin, java, c#, Go, c++, React, and frameworks
-
-
-Cyber Sec
-    Cyber threat intelligence
-    Attack and Defense
-
-
-AI/ML
-    Rewriting libraries to understand them
-    Deep learning
+Future plans
+    AI/ML
+    Cyber Sec
+    Understand Operating Systems (Serenity OS)
+    Understand Memory managers (in Rust)
 ```
