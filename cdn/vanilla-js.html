@@ -23,31 +23,9 @@ doc.addEv = function(elem, eventName, callback) {
 }
 
 
-
-
-
-
-
-function get_input_radio_value(querySelectorAllString) {
-	radios = doc.qsa(querySelectorAllString)
-	for (let i=0; i<radios.length; i++) {
-		if (radios[i].checked) {return radios[i].value}
-	}
-}
-
-
-function get_input_checkbox_values(qsString) {
-	checkboxes = doc.qsa(qsString)
-	values = []
-	for (let i=0; i < checkboxes.length; i++) {
-		if (checkboxes[i].checked)
-			values.push(checkboxes[i].value)
-	}
-	return values
-}
-
-
-const ajax = function(url, callback=()=>{}, data={}) {
+// Deploy as many as possible in a loop
+const ajax = async function(url, callback=()=>{}, data={}) {
+	let type
 	if (Object.keys(data).length === 0)	type='GET'
 	else type = 'POST'
 
@@ -70,28 +48,25 @@ const ajax = function(url, callback=()=>{}, data={}) {
 
 
 
-// Promise-based, best thing to use: ajax2()
-// Ignore everything else.
-//
-// ajax2() is Then-able
-const ajax2 = function(url, cbfn, data={}) {
-	xhrProm.data = data
-	xhrProm.url = url
+const ajax2 = async function(url, data={}) {
+	__promiseAjax__.data = data
+	__promiseAjax__.url = url
 
-	new Promise(xhrProm).then(cbfn)
+	return new Promise(__promiseAjax__)
 }
 
 
 // This is a helper-function entity.
-const xhrProm = function(RETURN, REJECT) {
+const __promiseAjax__ = function(RETURN, REJECT) {
 	let xhr = new XMLHttpRequest()
-	if (typeof xhrProm.data === 'undefined') 
+	let data
+	if (typeof __promiseAjax__.data === 'undefined') 
 		data = {}
-	else data = xhrProm.data
+	else data = __promiseAjax__.data
 
-	url = xhrProm.url
-	xhrProm.URL = url
-	xhrProm.XHR = xhr
+	url = __promiseAjax__.url
+	__promiseAjax__.URL = url
+	__promiseAjax__.XHR = xhr
 	
 	if (isEmpty(data)) type= 'GET'
 	else type='POST'
