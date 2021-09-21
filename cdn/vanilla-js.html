@@ -1,4 +1,5 @@
 <script>
+'use strict'
 /* The Minimized Vanilla JavaScript
  * Copyright (C) 2021 Muhammad - All Right Reserved
  *
@@ -34,8 +35,8 @@ const ajax = async function(url, callback=()=>{}, data={}) {
 	
 	xhr.onreadystatechange = ()=>{
 		if (xhr.readyState === 4) {
-			ajax3.response = xhr.response
-			ajax3.url = url
+			ajax.response = xhr.response
+			ajax.url = url
 			callback()
 		}
 	}
