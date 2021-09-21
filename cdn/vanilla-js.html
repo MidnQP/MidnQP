@@ -1,0 +1,122 @@
+<script>
+/* The Minimized Vanilla JavaScript
+ * Copyright (C) 2021 Muhammad - All Right Reserved
+ *
+ * Unauthorized copying of this file, via any 
+ * medium is strictly prohibited.
+ *
+ * Proprietary and confidential
+ * 
+ * Written by Muhammad Bin Zafar <midnqp@gmail.com>, August 2021
+ */
+const doc = document
+doc.orsc = doc.onreadystatechange
+doc.ce = doc.createElement
+doc.gebi = doc.getElementById
+doc.gebtn = doc.getElementByTagName
+
+doc.qs = doc.querySelector
+doc.qsa = doc.querySelectorAll
+
+doc.addEv = function(elem, eventName, callback) {
+    elem.addEventListener(eventName, callback)
+}
+
+
+
+
+
+
+
+function get_input_radio_value(querySelectorAllString) {
+	radios = doc.qsa(querySelectorAllString)
+	for (let i=0; i<radios.length; i++) {
+		if (radios[i].checked) {return radios[i].value}
+	}
+}
+
+
+function get_input_checkbox_values(qsString) {
+	checkboxes = doc.qsa(qsString)
+	values = []
+	for (let i=0; i < checkboxes.length; i++) {
+		if (checkboxes[i].checked)
+			values.push(checkboxes[i].value)
+	}
+	return values
+}
+
+
+const ajax = function(url, callback=()=>{}, data={}) {
+	if (Object.keys(data).length === 0)	type='GET'
+	else type = 'POST'
+
+	let xhr = new XMLHttpRequest()
+	xhr.open(type, url)
+	
+	xhr.onreadystatechange = ()=>{
+		if (xhr.readyState === 4) {
+			ajax3.response = xhr.response
+			ajax3.url = url
+			callback()
+		}
+	}
+	
+	if (type === 'GET') xhr.send()
+	else if (type === 'POST') 
+		xhr.send(JSON.stringify(data))
+}
+
+
+
+
+// Promise-based, best thing to use: ajax2()
+// Ignore everything else.
+//
+// ajax2() is Then-able
+const ajax2 = function(url, cbfn, data={}) {
+	xhrProm.data = data
+	xhrProm.url = url
+
+	new Promise(xhrProm).then(cbfn)
+}
+
+
+// This is a helper-function entity.
+const xhrProm = function(RETURN, REJECT) {
+	let xhr = new XMLHttpRequest()
+	if (typeof xhrProm.data === 'undefined') 
+		data = {}
+	else data = xhrProm.data
+
+	url = xhrProm.url
+	xhrProm.URL = url
+	xhrProm.XHR = xhr
+	
+	if (isEmpty(data)) type= 'GET'
+	else type='POST'
+	xhr.open(type, url)
+
+	xhr.srh = xhr.setRequestHeader
+	xhr.grh = xhr.getResponseHeader
+	xhr.garh = xhr.getAllResponseHeaders
+
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState === 4) 
+			RETURN(xhr.response)
+	}
+	if (type==='POST') xhr.send(JSON.stringify(data))
+	else if (type === 'GET') xhr.send()
+}
+
+
+
+
+
+
+
+
+function isEmpty(obj) {
+	return Object.keys(obj).length === 0;
+}
+</script>
