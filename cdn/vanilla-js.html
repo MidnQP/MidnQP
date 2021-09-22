@@ -1,5 +1,4 @@
 <script>
-'use strict'
 console.log(`
 /** The Minimized Vanilla JavaScript
   * Copyright (C) 2021 Muhammad <midnqp@gmail.com>
@@ -24,11 +23,12 @@ doc.addEv = function(elem, eventName, callback) {
 // Deploy as many as possible in a loop
 const ajax = async function(url, callback=()=>{}, data={}) {
 	let type
-	if (Object.keys(data).length === 0)	type='GET'
+	if (isEmpty(data))	type='GET'
 	else type = 'POST'
 
 	let xhr = new XMLHttpRequest()
 	xhr.open(type, url)
+	xhr.setRequestHeader('Content-type', 'application/json')
 	
 	xhr.onreadystatechange = ()=>{
 		if (xhr.readyState === 4) {
@@ -38,7 +38,8 @@ const ajax = async function(url, callback=()=>{}, data={}) {
 		}
 	}
 	
-	if (type === 'GET') xhr.send()
+	if (type === 'GET') 
+		xhr.send()
 	else if (type === 'POST') 
 		xhr.send(JSON.stringify(data))
 }
@@ -46,31 +47,31 @@ const ajax = async function(url, callback=()=>{}, data={}) {
 
 
 
-const ajax2 = async function(url, data={}) {
-	__promiseAjax__.data = data
-	__promiseAjax__.url = url
 
-	return new Promise(__promiseAjax__)
-}
+
 
 
 // This is a helper-function entity.
 const __promiseAjax__ = function(RETURN, REJECT) {
-	let xhr = new XMLHttpRequest()
 	let data
 	if (typeof __promiseAjax__.data === 'undefined') 
 		data = {}
-	else data = __promiseAjax__.data
+	else 
+		data = __promiseAjax__.data
+	
+	let type
+	if (isEmpty(data)) type= 'GET'
+	else type='POST'
 
-	url = __promiseAjax__.url
+
+	let url = __promiseAjax__.url
 	__promiseAjax__.URL = url
 	__promiseAjax__.XHR = xhr
 	
-	if (isEmpty(data)) type= 'GET'
-	else type='POST'
+	let xhr = new XMLHttpRequest()
 	xhr.open(type, url)
-
 	xhr.srh = xhr.setRequestHeader
+	xhr.srh('Content-type', 'application/json')
 	xhr.grh = xhr.getResponseHeader
 	xhr.garh = xhr.getAllResponseHeaders
 
@@ -82,6 +83,17 @@ const __promiseAjax__ = function(RETURN, REJECT) {
 	else if (type === 'GET') xhr.send()
 }
 
+
+
+
+// Maybe we can't deploy as many as possible in a for loop.
+// Let's see.
+const ajax2 = async function(url, data={}) {
+	__promiseAjax__.data = data
+	__promiseAjax__.url = url
+
+	return new Promise(__promiseAjax__)
+}
 
 
 
