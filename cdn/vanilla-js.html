@@ -21,7 +21,7 @@ doc.addEv = function(elem, eventName, callback) {
 
 
 // Deploy as many as possible in a loop
-const ajax = async function(url, callback=()=>{}, data={}) {
+const ajax = async function(url, callback=()=>{console.log(ajax.response)}, data={}) {
 	let type
 	if (isEmpty(data))	type='GET'
 	else type = 'POST'
